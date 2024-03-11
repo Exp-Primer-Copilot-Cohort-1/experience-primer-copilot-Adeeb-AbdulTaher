@@ -61,15 +61,18 @@ app.get('/', function(req, res) {
 });
 // Create a route for the path /comments
 app.get('/comments', function(req, res) {
-  res.send('Comments');
+    res.send('Comments');
 });
 // Create a route for the path /comments/1
 app.get('/comments/1', function(req, res) {
-  res.send('Comment 1');
+    res.send('Comment 1');
 });
 // Create a route for the path /comments/2
 app.get('/comments/2', function(req, res) {
-  res.send('Comment 2');
+    res.send('Comment 2');
 });
 // Start the server on port 3000
-app.listen(3000, function)
+app.listen(3000, function() {
+    // Add an empty pair of parentheses after the 'function' keyword
+});
+// End of comments.js
